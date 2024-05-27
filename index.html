@@ -20,7 +20,13 @@
         body {
             background: url('https://i.postimg.cc/6QR8W7zS/IMG-1674.jpg') no-repeat center center fixed;
             background-size: cover;
-            background-position: center 32%;
+            background-position: center 33%;
+        }
+        
+        .text-container {
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semi-transparente */
+            padding: 20px;
+            border-radius: 10px;
         }
         
         p {
@@ -34,7 +40,9 @@
     </style>
 </head>
 <body>
-    <p>Días de novios: <span id="days-count"></span> <3</p>
+    <div class="text-container">
+        <p>Días de novios: <span id="days-count"></span> <3</p>
+    </div>
     <script>
         const startDate = new Date(2024, 0, 1); 
 
