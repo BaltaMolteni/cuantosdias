@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -58,3 +59,65 @@
     </script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CuantosDiasJuntos<3</title>
+    <style>
+        body, html {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 5vw; /* Ajusta el tamaño del texto en relación al ancho de la ventana */
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Centra verticalmente */
+            text-align: center;
+        }
+
+        body {
+            background: url('https://i.postimg.cc/6QR8W7zS/IMG-1674.jpg') no-repeat center center fixed;
+            background-size: cover;
+            background-position: center 33%;
+        }
+        
+        .text-container {
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semi-transparente */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        p {
+            text-shadow: 1px 0px 10px #0C0D11;
+            margin: 0;
+        }
+
+        #days-count {
+            text-shadow: 1px 0px 10px #ce2a1e;
+        }
+    </style>
+</head>
+<body>
+    <div class="text-container">
+        <p>Días de novios: <span id="days-count"></span> <3</p>
+    </div>
+    <script>
+        const startDate = new Date(2024, 0, 1); 
+
+        function updateDaysCount() {
+            const now = new Date();
+            const timeDifference = now - startDate;
+            const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+            document.getElementById('days-count').textContent = daysDifference;
+        }
+        // Actualiza el contador al cargar la página
+        updateDaysCount();
+    </script>
+</body>
+</html>
+>>>>>>> 6379d2ffebbe3262a9def72375dfb7de179e2fc7
